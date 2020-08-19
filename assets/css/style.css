@@ -1,0 +1,104 @@
+/* Reset */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #0E1E47;
+}
+
+ul {
+  list-style: none;
+}
+
+.fix:after,
+ul:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+a {
+  color: #0E1E47;
+  text-decoration: none;
+  display: inline-block;
+  transition: .4s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+/*
+ * Start Design
+ */
+
+#taskManagerWrapper {
+  margin-top: 25px;   
+}
+#taskManagerWrapper .card-content .card-title {
+  margin-top: 30px;
+  display: inline-block;
+  border-bottom: 3px solid #2BBBAD;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+#taskManagerWrapper .card-action h5 {
+  display: inline-block;
+  border-bottom: 3px solid #2BBBAD;
+  padding-bottom: 5px;
+}
+ #taskManagerWrapper .input-field>label {
+  top: 15px;
+  font-size: .8rem;
+}
+
+#taskManagerWrapper .input-field > label.active {
+  -webkit-transform: translateY(-20px) scale(0.8)!important;
+  transform: translateY(-20px) scale(0.8)!important;
+}
+
+#taskManagerWrapper .line-through {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+#taskManagerWrapper .collection .collection-item .secondary-content {
+  margin-right: 0!important;
+}
+#taskManagerWrapper .collection .collection-item .secondary-content i{
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.card-action {
+  display: none;
+}
